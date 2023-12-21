@@ -131,6 +131,8 @@ app.get('/getImage/:user', (req, res) => {
     res.json({ message: imageData }); // Send the image data as JSON
   });
 });
+
+
 async function checkVerificationStatus(token) {
     // Query the user's verification status from the database
     try{
@@ -156,6 +158,8 @@ async function checkVerificationStatus(token) {
     throw error;
   }
 }
+
+
 app.get('/confirm', async (req, res) => {
 
   const token = req.query.token;
