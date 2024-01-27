@@ -1,0 +1,21 @@
+/* Result.css */
+
+.text-result {
+    animation: fade 0.5s infinite alternate;
+    color:blue; /* Set text color to white */
+    /* background-color: pink; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+  
